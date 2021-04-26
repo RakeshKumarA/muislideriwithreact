@@ -25,17 +25,9 @@ SwiperCore.use([
 ]);
 
 const useStyles = makeStyles({
-  parent: {
-    display: "grid",
-    gridTemplateRows: "auto 1fr auto",
-    height: "100vh",
-  },
-  media: {
-    height: "600px",
-  },
   mediaStyle: {
     width: "100%",
-    height: "600px",
+    height: "80vh",
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -45,7 +37,6 @@ const useStyles = makeStyles({
 const App = () => {
   const classes = useStyles();
   const params = {
-    // spaceBetween: 30,
     slidesPerView: 1,
     autoplay: {
       delay: 3000,
